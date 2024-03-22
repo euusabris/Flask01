@@ -1,0 +1,15 @@
+{% from 'macros.html' import nav_bar with context %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{  titulo }}</title>
+</head>
+<body>
+<h1>Minha aplicação</h1>
+{{ nav_bar('principal', "Home") }}
+{{ nav_bar('minha_funcao', "Flask") }}
+<br /><br />
+{%  block conteudo %}{%  endblock %}
+</body>
+</html>
