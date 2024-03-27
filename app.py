@@ -7,7 +7,7 @@ app = Flask(__name__,
 @app.route('/')
 @app.route('/index')
 def principal():
-    return render_template('index.html', titulo="Teste")
+    return render_template('index.jinja', titulo="Teste")
 
 # def hello_world():  # put application's code here
 #     return 'Hello World!'
